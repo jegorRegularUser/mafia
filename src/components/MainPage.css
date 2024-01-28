@@ -1,0 +1,36 @@
+input {
+	padding: 10px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+}
+ul {
+	list-style: none;
+	color: white;
+}
+.enter {
+	border: none;
+	border-radius: 15px;
+	color: white;
+	text-transform: uppercase;
+	background-color: rgba(250, 250, 250, 0.1);
+}
+.enter:hover {
+	background-color: rgba(250, 250, 250, 0.3);
+	border-radius: 2px;
+}
+.delete {
+	border: none;
+	border-radius: 15px;
+	color: rgb(103, 6, 6);
+	text-transform: uppercase;
+	background-color: black;
+}
+.delete:hover {
+	background-color: rgba(103, 6, 6, 0.5);
+	color: rgb(152, 27, 27);
+	border-radius: 2px;
+}
+.noDisplay {
+	display: none;
+}
