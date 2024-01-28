@@ -2,4 +2,6 @@ html {
 	background-color: black;
 	color: white;
 	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 20px;
 }
