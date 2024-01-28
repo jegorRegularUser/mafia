@@ -504,8 +504,7 @@ function MainPage() {
 								className={`enter ${exposeIsOver ? 'noDisplay' : ''}`}
 								onClick={nextPlayerOnExposeEjectionHandler}
 							>
-								Воздержаться и передать следующему игроку(
-								{players[numberOfActivePlayer]?.name})
+								Воздержаться
 							</button>
 							<button
 								className={`enter ${exposeIsOver ? '' : 'noDisplay'}`}
