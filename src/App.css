@@ -1,5 +1,8 @@
 html {
 	background-color: black;
+	background-image: url('/public/mafiaBackround.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
 	color: white;
 	padding-left: 5%;
 	padding-right: 5%;

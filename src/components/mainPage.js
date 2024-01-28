@@ -493,7 +493,7 @@ function MainPage() {
 													id={player.id}
 													onClick={exposeHandler}
 												>
-													выставить на голосование
+													выставить
 												</button>
 											</li>
 										)
@@ -537,7 +537,7 @@ function MainPage() {
 											id={player.id}
 											onClick={ejectionHandler}
 										>
-											проголосовать за выбывание
+											проголосовать
 										</button>
 									</li>
 								))}
