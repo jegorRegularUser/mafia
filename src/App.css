@@ -1,10 +1,21 @@
 html {
 	background-color: black;
-	background-image: url('/public/mafiaBackround.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
 	padding-left: 5%;
 	padding-right: 5%;
 	font-size: 20px;
+	min-height: 70vh;
+}
+
+@media (max-width: 600px) {
+	html {
+		background-image: url('/public/mafiaVertical.jpeg');
+	}
+}
+@media (min-width: 601px) {
+	html {
+		background-image: url('/public/mafiaBackround.jpeg');
+	}
 }
