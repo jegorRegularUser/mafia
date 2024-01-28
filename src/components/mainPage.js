@@ -357,7 +357,7 @@ function MainPage() {
 			{!gameIsStarted && !gameIsEnd && (
 				<div className={`${gameIsStarted ? 'noDisplay' : ''}`}>
 					<h1>Добро пожаловать в "Мафия"</h1>
-					<h4>Для начала введите всех игроков</h4>
+					<h4>Для начала введите всех игроков(минимум 5)</h4>
 					<ul>
 						{players.map((player, index) => {
 							return (

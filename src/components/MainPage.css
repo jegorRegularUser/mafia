@@ -14,10 +14,11 @@ ul {
 	color: white;
 	text-transform: uppercase;
 	background-color: rgba(250, 250, 250, 0.1);
+	font-size: 20px;
 }
 .enter:hover {
 	background-color: rgba(250, 250, 250, 0.3);
-	border-radius: 2px;
+	border-radius: 5px;
 }
 .delete {
 	border: none;
@@ -25,11 +26,12 @@ ul {
 	color: rgb(103, 6, 6);
 	text-transform: uppercase;
 	background-color: black;
+	font-size: 20px;
 }
 .delete:hover {
 	background-color: rgba(103, 6, 6, 0.5);
 	color: rgb(152, 27, 27);
-	border-radius: 2px;
+	border-radius: 5px;
 }
 .noDisplay {
 	display: none;
