@@ -143,7 +143,7 @@ function MainPage() {
 		setIsRoleShowing(false)
 		setIsRoleTaskComplited(false)
 		setIsCorrect(2)
-		setRole('')
+		setPlayerForRoleCheck('')
 		setNumberOfActivePlayer(1)
 		setNumberRound(prev => (prev += 1))
 		setTimeRemaining(60)
@@ -193,14 +193,18 @@ function MainPage() {
 		setNumberOfActivePlayer(prevNum => (prevNum += 1))
 		setTimeRemaining(60)
 		setIsCorrect(2)
-		setRole('')
+		setPlayerForRoleCheck('')
 		if (numberOfActivePlayer + 1 === players.length) {
 			setNightIsOver(true)
 		}
 	}
-	const [role, setRole] = useState('')
+
+	//проверить роль для шерифа/дона
+	const [playerForRoleCheck, setPlayerForRoleCheck] = useState('')
 	const checkRole = idPl => {
-		setRole(players[players.findIndex(pl => pl.id === +idPl.target.id)].role)
+		setPlayerForRoleCheck(
+			players[players.findIndex(pl => pl.id === +idPl.target.id)]
+		)
 	}
 	const [nightIsEnd, setNightIsEnd] = useState(false)
 	const [isMurder, setIsMurder] = useState(false)
@@ -690,7 +694,7 @@ function MainPage() {
 													))}
 												</ul>
 										  )) ||
-										  (isRoleTaskComplited && !role && (
+										  (isRoleTaskComplited && !playerForRoleCheck && (
 												<ul>
 													{players.map((player, index) => (
 														<li key={index}>
@@ -707,9 +711,13 @@ function MainPage() {
 														</li>
 													))}
 												</ul>
-										  )) || <div>{role}</div>
+										  )) || (
+												<div>
+													{playerForRoleCheck.name} - {playerForRoleCheck.role}
+												</div>
+										  )
 										: players[numberOfActivePlayer - 1].role === 'Шериф'
-										? (!role && (
+										? (!playerForRoleCheck && (
 												<ul>
 													{players.map((player, index) => (
 														<li key={index}>
@@ -726,7 +734,11 @@ function MainPage() {
 														</li>
 													))}
 												</ul>
-										  )) || <div>{role}</div>
+										  )) || (
+												<div>
+													{playerForRoleCheck.name} - {playerForRoleCheck.role}
+												</div>
+										  )
 										: (isCorrect === 2 && (
 												<div>
 													{mran1} + {mran2} = ?
