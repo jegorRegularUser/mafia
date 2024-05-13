@@ -1,8 +1,7 @@
 # Mafia game
 it is simple mafia game on react.\
-there is at least 5 gamers.\
-this app have all parts of original mafia.\
-there is also a host of this app https://jegorsmafia.vercel.app
+there are 5 gamers at least.\
+https://jegorsmafia.vercel.app
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
